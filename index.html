@@ -12,28 +12,83 @@
 </head>
 
 <body>
+    <header>
+        <div class="header-logo">
+            <img src="../imgs/logo.png">
+        </div>
+        <!-- Nav Bar -->
+        <div class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="icon"><i class="fa fa-home" aria-hidden="true"></i><i class="fa fa-home" aria-hidden="true"></i></div>
+                        <div class="name"><span data-text="Home">Home</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon"><i class="fa fa-address-card" aria-hidden="true"></i><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                        <div class="name"><span data-text="About">About</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                        <div class="name"><span data-text="Experience">Experience</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon"><i class="fa fa-code" aria-hidden="true"></i><i class="fa fa-code" aria-hidden="true"></i></div>
+                        <div class="name"><span data-text="Projects">Projects</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                                <i class="fa fa-address-book" aria-hidden="true"></i>
+                                <i class="fa fa-address-book" aria-hidden="true"></i>
+                        </div>
+                        <div class="name"><span data-text="Contact">Contact</span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <!--Divs used for hamburger menu lines (connected to toggler) -->
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div>
+        <!-- Shrunken Screen Nav -->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <!--Divs used for hamburger menu lines (connected to toggler) -->
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
                 <div>
-                    <ul>
-                        <img src="../imgs/logo.png">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <img src="../imgs/logo.png">
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Experience</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-file"></i></a></li>
+                <li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </div>
+    </header>
     <!-- Javascript (JS) files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
