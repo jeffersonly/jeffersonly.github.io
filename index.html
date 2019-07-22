@@ -89,7 +89,38 @@
             </ul>
         </div>
     </header>
+
+    <div id="particles-js">
+        
+    </div>
+
+    <div class="home-pg" id="home-pg">
+            <div class="container">
+                <h2>
+                    Welcome to my page!
+                    <br/>
+                    I'm <span class="homeText"></span>
+                    <br/>
+                    <span class="faceText"></span>
+                </h2>
+            </div>
+        </div>
+        
+        <div class="about-pg" id="about-pg">
+            <h1>hello</h1>
+        </div>
+        <div class="experience-pg">
+            <h1>bye</h1>
+        </div>
+
+    
+
+
     <!-- Javascript (JS) files -->
+    <script type="text/javascript" src="../js/particles/particles.js"></script>
+    <script type="text/javascript" src="../js/particles/app.js"></script>
+
+    <script src="../js/typed.min.js"></script> <!--Typed JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
@@ -112,6 +143,20 @@
             loading_screen.finish();
         })
     }
+
+    var typed = new Typed(".homeText", {
+        strings: ["Jefferson", "a Student", "a Programmer", "a Web Developer"],
+        typeSpeed: 80,
+        backSpeed: 70,
+        loop: true
+    }); 
+    var typed = new Typed(".faceText", {
+        strings: ["( ⚆ _ ⚆ )", "༼ つ ಥ_ಥ ༽つ", "(¬‿¬)", "﴾͡๏̯͡๏﴿ O'RLY?"],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true
+    }); 
+
 </script>
 
 </html>
