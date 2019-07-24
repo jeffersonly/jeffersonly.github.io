@@ -20,6 +20,19 @@ html, body {
     90% { background-color: rgb(252, 188, 226); }
     100% { background-color: rgb(255, 169, 169); }
 }
+@keyframes textColorChange {
+    0% { color: white; }
+    10% { color: rgb(196, 0, 0); }
+    20% { color: rgb(192, 119, 1); }
+    30% { color:  rgb(181, 209, 0); }
+    40% { color:  rgb(2, 190, 27); }
+    50% { color: rgb(2, 169, 199); }
+    60% { color: rgb(0, 51, 190); }
+    70% { color:  rgb(28, 2, 196); }
+    80% { color:  rgb(74, 0, 192);}
+    90% { color: rgb(149, 0, 168); }
+    100% { color: rgb(196, 0, 0); }
+}
 /* Preloader for website, code below is based around spinkit website */
 .preloader-message {
     color: white;
@@ -111,14 +124,14 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
-    display: none;
+    z-index: 100;
+    /* display: none; */
 }
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 200;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -128,9 +141,9 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.1);
     display: flex;
@@ -139,23 +152,24 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 }
 /* Hamburger Lines*/
 .menu-wrap .hamburger > div {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 35px;
     height: 4px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
+    z-index: 100;
 }
 /* Style for top and bottom lines (of the 3 lines) */
 .menu-wrap .hamburger > div:before, 
 .menu-wrap .hamburger > div:after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     top: -10px;
-    width: 100%;
+    width: 35px;
     height: 4px;
     background: inherit;
 }
@@ -230,6 +244,13 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     opacity: 1;
     transition: opacity 0.5s ease;
 }
+.menu-wrap .menu > div > div > ul > li > a:hover {
+    color: white;
+    font-size: 115%;
+    text-shadow: 0 0 30px black;
+    transition: 0.5s all ease;
+    animation: textColorChange 40s infinite;
+}
 /* Normal navigation bar (not shrunk) */
 .nav-bar ul {
     position: absolute;
@@ -241,6 +262,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     display: flex;
     width: auto;
     margin-top: auto;
+    z-index: 100;
 }
 .nav-bar ul li {
     list-style: none;
@@ -307,8 +329,9 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 }
 /* Sidebar icons */
 .sidebar ul {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    z-index: 100;
 }
 .sidebar ul li {
     list-style: none;
@@ -345,7 +368,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 .header-logo {
     right: 0;
     bottom: 0;
-    position: absolute;
+    position: fixed;
 }
 
 /* Home Page */
@@ -369,14 +392,120 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     text-align: center;
     font-size: 3em;
 }
+
+
+
+#particles-js {
+    position: absolute;
+    height: 500vh;
+    width: 100%;
+}
 /* About Page */
 .about-pg {
     position: relative;
     width: 100%;
     height: 100vh;
 }
+.experience-pg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.projects-pg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.contact-pg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.contact-pg .footer {
+    height: 90vh;
+    width: 90%;
+    background-color: black;
+    background: url(../imgs/footbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    border-radius: 10px;
+}
+.contact-pg .footer .contact-msg {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-pg .footer .contact-msg h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.contact-pg .footer .contact-msg h3 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.input { /* Seperate contact form inputs */
+    margin-bottom: 2.5%;
+    background: transparent;
+    box-shadow: 0 1px 10px white;
+}
+input {
+    font-weight: 700;
+    font-size:1.3em;
+    color:white;
+    width:90%;
+    height:55px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    padding-left: 10px;
+}
+textarea{
+    font-weight:700;
+    font-size:1.3em;
+    color:white;
+    height:225px;
+    width:90%;
+    border:none;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    display: block;
+}
+::placeholder {
+    color: white;
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+.input:focus { /* Clicked on contact form input */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.submit-btn {
+    background: transparent;
+    border: 1px solid white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.submit-btn:hover {
+    box-shadow: 0px 0px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* Media Queries */
-@media only screen and (max-width: 757px) {
+@media only screen and (max-width: 765px) {
     .menu-wrap { /* Display shrunk nav */
         display: initial;
     }
@@ -398,12 +527,37 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     .menu-wrap .menu > div > div > ul > li {
         font-size: 1.25rem;
     }
+    /* Contact Page */
+    .contact-pg .footer .contact-msg {
+        width: 68%;
+    }
+    .contact-pg .footer .contact-msg {
+        padding-top: 25%;
+    }
+    textarea{
+        height:155px;
+    }
 }
-/* Particles js effect on website */
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500vh;
-    width: 100%;
+@media only screen and (max-width: 1400px) {
+    /* Contact Page */
+    .contact-pg .footer {
+        height: 96vh;
+        width: 96%;
+        left: 2%;
+        bottom: 2%;
+    }
+    .contact-pg .footer .contact-msg {
+        padding-top: 10%;
+    }
+    .contact-pg .footer .contact-msg h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .contact-pg .footer .contact-msg h3 {
+        font-size: 1.25em;
+        font-weight: 500;
+    }
+    input, textarea, ::placeholder {
+        font-size:1em;
+    }
 }
