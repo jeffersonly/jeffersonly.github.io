@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#contact">
                         <div class="icon">
                                 <i class="fa fa-address-book" aria-hidden="true"></i>
                                 <i class="fa fa-address-book" aria-hidden="true"></i>
@@ -69,12 +69,12 @@
                     <div>
                         <ul>
                             <img src="../imgs/logo.png">
-                            <li><a href="#">Resume</a></li>
+                            <li><a href="/files/MyResume.pdf" target="_blank">Resume</a></li>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Experience</a></li>
                             <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,15 +84,18 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <ul>
-                <li><a href="#"><i class="fas fa-file"></i></a></li>
-                <li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
-                <li><a href="#"><i class="far fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="/files/MyResume.pdf" target="_blank"><i class="fas fa-file"></i></a></li>
+                <li><a href="tel:1-408-387-4709"><i class="fas fa-mobile-alt"></i></a></li>
+                <li><a href="mailto:jeffersonly98@gmail.com"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jeffersonly/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/jeffersonly" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/jefferson.ly.3" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
             </ul>
         </div>
     </header>
+
+    <!-- Button that scrolls to top -->
+    <button id="back-to-top-btn" onclick="topFunction()"><i class="fas fa-sort-up"></i></button>
 
     <div id="particles-js"></div>
 
@@ -107,11 +110,9 @@
             </h2>
         </div>
     </div>
-
-    
     
     <div class="about-pg" id="about">
-        <h1>hello</h1>
+  
     </div>
 
     <div class="experience-pg" id="experience">
@@ -123,34 +124,6 @@
     </div>
 
     <div class="contact-pg" id="contact">
-           <!--  <div class="footer">
-                <div class="footer-heading"><h2>Get in Touch!</h2></div>
-                <form action="https://formspree.io/jeffersonly98@gmail.com" method="POST">
-                    <label>
-                        
-                        <input type="text" name="name" class="name" placeholder="Name"/>
-                    </label>
-                    <label>
-                        
-                        <input type="email" name="email" class="email" placeholder="Email"/>
-                    </label>
-                    <label>
-                        
-                        <input type="tel" name="phoneNum" class="phoneNum" placeholder="Phone #"/>
-                    </label>
-                    <label>
-                        
-                        <input type="text" name="subject" class="subject" placeholder="Subject/Topic"/>
-                    </label>
-                    <label>
-                        
-                        <textarea name="message" class="message" placeholder="Message"></textarea>
-                    </label>
-                    <div class="status">
-                    </div>
-                    <button type="submit" class="submit-btn">Send</button>
-                </form>
-            </div> -->
         <div class="footer">
             <div class="contact-msg">
                 <h2>Get in Touch!</h2>
@@ -163,7 +136,6 @@
                     <textarea name="message" type="text" placeholder="Type your message" class="input" id="message" required="" style="margin-left: auto; margin-right: auto;"></textarea>
                     <button type="submit" class="submit-btn">Send</button>
                 </form>
-                        
             </div>
         </div>
         
