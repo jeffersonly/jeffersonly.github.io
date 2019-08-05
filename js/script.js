@@ -7,20 +7,6 @@ function topFunction() { //Scroll Back to Top Button, When the user clicks on th
 }
 
 $(document).ready(function () {
-    document.addEventListener('scroll', () => { //Used for scroll back to the top button, adds button based on position in page, adds effect for btn
-        var Scroll = $(document).scrollTop(); // This variable finds the distance you have scrolled from the top.
-        if (Scroll >= 200) {
-            $("#back-to-top-btn").css({
-                "display": "block",
-                "opacity": "0",
-            }).animate({
-                "opacity": "1",
-            }, 800);
-        } else {
-            $("#back-to-top-btn").css("display", "none");
-        }
-    });
-
     /* Swiper Initialized (Experience Section)*/
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
