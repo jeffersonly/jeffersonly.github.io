@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Swiper for Sliders -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     
@@ -24,25 +26,25 @@
         <div class="nav-bar">
             <ul>
                 <li>
-                    <a href="#">
-                        <div class="icon"><i class="fa fa-home" aria-hidden="true"></i><i class="fa fa-home" aria-hidden="true"></i></div>
-                        <div class="name"><span data-text="Home">Home</span></div>
+                    <a href="#home">
+                        <div class="icon"><i class="fa fa-home" aria-hidden="true" style="color: black;"></i><i class="fa fa-home" aria-hidden="true"></i></div>
+                        <div class="name"><span data-text="Home" style="color: black;">Home</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#about">
                         <div class="icon"><i class="fa fa-address-card" aria-hidden="true"></i><i class="fa fa-address-card" aria-hidden="true"></i></div>
                         <div class="name"><span data-text="About">About</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#experience">
                         <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i><i class="fa fa-briefcase" aria-hidden="true"></i></div>
                         <div class="name"><span data-text="Experience">Experience</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#projects">
                         <div class="icon"><i class="fa fa-code" aria-hidden="true"></i><i class="fa fa-code" aria-hidden="true"></i></div>
                         <div class="name"><span data-text="Projects">Projects</span></div>
                     </a>
@@ -70,10 +72,10 @@
                         <ul>
                             <img src="../imgs/logo.png">
                             <li><a href="/files/MyResume.pdf" target="_blank">Resume</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Experience</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -112,11 +114,46 @@
     </div>
     
     <div class="about-pg" id="about">
-  
+        <div class="about-container"> 
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(/imgs/bgimg2.jpg)">
+                            <h1>My Education (▰˘◡˘▰)</h1>
+                            <h2>I'm currently a fourth year, Software Engineering Student at SJSU! I'm involved in organizations such as MEP (MESA Engineering Program), SASE (Society of Asian Scientists and Engineers), and EOP (Educational Oppourtunity Program).</h2>
+                            <h2>I'm on track to graduate in December 2020 and will hopefully secure a full time job offer before so. I'm primarily interested in Web development, Artificial Intelligence, Machine Learning, Virtual Reality, Game Development, and CyberSecurity. However, I'm open to all fields of Software Development and I am trying to soak up as much knowledge as possible.</h2>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url(/imgs/hobbies-img.jpg)">
+                            <h1>Hobbies I Enjoy ≧◡≦</h1>
+                            <h2>In my free time, I enjoy hanging out with my friends, coding, working out, and playing games! In one way or another, I believe that a good balance between the four results in a fun, healthy, and maintainable lifestyle. I also enjoy giving back to the community through volunteering!</h2>
+                            <h2>At the moment, I enjoy playing League of Legends with my friends as well as TFT. I believe these games challenge your mind as they require strategical thinking, management, and mechanical abilities. I also enjoy watching anime, especially one's with great animations and art!</h2>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url(/imgs/personal-img.jpg)">
+                            <h1>More Info ^̮^</h1>
+                            <h2>Date of Birth: August 29, 1998<br/>Hometown: San Jose<br/>Ethnicity: Asian<br/>Languages: English, Vietnamese<br/>Horoscope: Virgo<br/>Current Favorite Song: Panic At the Disco - High Hopes<br/>Favorite Book Series: Percy Jackson Series<br/>Favorite Movie: Kung Fu Hustle<br/>Favorite Anime: The King's Avatar</h2>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(/imgs/bgimg2.jpg)">
+                            <h1 class="about-text-gallery-thumbs-text">Education</h1>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url(/imgs/hobbies-img.jpg)">
+                            <h1 class="about-text-gallery-thumbs-text">Hobbies</h1>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url(/imgs/personal-img.jpg)">
+                            <h1 class="about-text-gallery-thumbs-text">Info</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
     <div class="experience-pg" id="experience">
-        <h1>hello2</h1>
+        
     </div>
 
     <div class="projects-pg" id="projects">
@@ -148,6 +185,8 @@
     <!-- Javascript (JS) files -->
     <script type="text/javascript" src="../js/particles/particles.js"></script>
     <script type="text/javascript" src="../js/particles/app.js"></script>
+    
+    <script type="text/javascript" src="js/swiper/swiper.js"></script><!-- Sliders using Swiper.js -->
 
     <script src="../js/typed.min.js"></script> <!--Typed JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

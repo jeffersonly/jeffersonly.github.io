@@ -403,19 +403,75 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     width: 100%;
     height: 100vh;
 }
-.experience-pg {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+.about-container { /* Slider for About Page */
+    height: 90vh;
+    width: 90%;
+    z-index: 1;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    border-radius: 10px;
 }
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+.swiper-slide h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 2.5%;
+}
+.swiper-slide h2 {
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+}
+.about-text-gallery-thumbs-text {
+    height: 90px;
+    line-height: 90px;
+}
+
 .projects-pg {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
+.experience-pg { /* Experience Page */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
-.contact-pg {
+.contact-pg { /* Contact Page */
     position: relative;
     width: 100%;
     height: 100vh;
@@ -536,6 +592,21 @@ textarea{
     }
 }
 @media only screen and (max-width: 1400px) {
+    /* About Page */
+    .about-container {
+        height: 96vh;
+        width: 96%;
+        left: 2%;
+        bottom: 2%;
+    }
+    .swiper-slide h1 {
+        font-size: 1.5em;
+    }
+    .swiper-slide h2 {
+        font-size: 1.25em;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
     /* Contact Page */
     .contact-pg .footer {
         height: 96vh;
@@ -555,7 +626,7 @@ textarea{
         font-weight: 500;
     }
     input, textarea, ::placeholder {
-        font-size:1em;
+        font-size: 1em;
     }
 }
 /* Navigate to top button */
@@ -589,3 +660,5 @@ textarea{
     80% { color: rgba(255, 255, 255, .8); }
     90% { color: rgba(255, 255, 255, .7); }
 }
+
+

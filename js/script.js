@@ -20,4 +20,29 @@ $(document).ready(function () {
             $("#back-to-top-btn").css("display", "none");
         }
     });
+
+    /* Swiper Initialized (Experience Section)*/
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        thumbs: {
+          swiper: galleryThumbs
+        },
+        autoplay: {
+            delay: 5000
+        }
+    });
 });
