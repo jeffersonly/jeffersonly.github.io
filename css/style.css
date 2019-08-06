@@ -7,6 +7,9 @@ html, body {
     animation: backgroundColorChange 40s infinite;
     scroll-behavior: smooth; /* Make navigation scroll smoothly instead of jumping*/
 }
+* {
+    -webkit-overflow-scrolling: touch;
+}
 @keyframes backgroundColorChange {
     0% { background-color: rgb(255, 169, 169); }
     10% { background-color: rgb(250, 228, 193); }
@@ -361,6 +364,9 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 .sidebar .fa-facebook-square:hover {
     color: #3b5998;
 }
+.sidebar .fa-music:hover {
+    color: rgb(143, 89, 29);
+}
 .spotify {
     text-align: center;
     z-index: 101;
@@ -493,7 +499,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 }
 .exp-container h1 {
     color: white;
-    font-size: 30px;
+    font-size: 2.5em;
     font-weight: 700;
     text-shadow: 0px 10px 30px black;
 }
@@ -554,7 +560,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     opacity: 0;
 }
 .experience-pg ul li .content h2 {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 600;
 }
 .experience-pg ul li .content p {
@@ -667,6 +673,10 @@ textarea{
 
 /* Media Queries */
 @media only screen and (max-width: 765px) {
+    .spotify {
+        width: 65%;
+        height: 65vh;
+    }
     .menu-wrap { /* Display shrunk nav */
         display: initial;
     }
@@ -753,8 +763,8 @@ textarea{
 /* Navigate to top button */
 #section-up-btn {
     position: absolute;
-    bottom: 75px;
-    right: 15px;
+    bottom: 115px;
+    right: 5px;
     font-size: 65px;
     text-align: center;
     width: 50px;
@@ -786,8 +796,8 @@ textarea{
 }
 #section-down-btn {
     position: absolute;
-    bottom: 50px;
-    right: 15px;
+    bottom: 90px;
+    right: 5px;
     font-size: 65px;
     text-align: center;
     width: 50px;
