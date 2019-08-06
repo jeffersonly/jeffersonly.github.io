@@ -335,7 +335,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 }
 .sidebar ul li {
     list-style: none;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 .sidebar ul li i {
     font-size: 24px;
@@ -670,96 +670,6 @@ textarea{
     box-shadow: 0px 0px 30px;
     background-color: rgba(255, 255, 255, 0.2);
 }
-
-/* Media Queries */
-@media only screen and (max-width: 765px) {
-    .spotify {
-        width: 65%;
-        height: 65vh;
-    }
-    .menu-wrap { /* Display shrunk nav */
-        display: initial;
-    }
-    .nav-bar ul { /* Hide main nav */
-        display: none;
-    }
-    .header-logo { /* Hide logo */
-        display: none;
-    }
-    .home-pg .container h2 {
-        font-size: 1.5em;
-    }
-    .sidebar ul li i {
-        font-size: 20px;
-    }
-    .home-pg .container {
-        width: 55%;
-    }
-    .menu-wrap .menu > div > div > ul > li {
-        font-size: 1.25rem;
-    }
-    /* Contact Page */
-    .contact-pg .footer .contact-msg {
-        width: 68%;
-    }
-    .contact-pg .footer .contact-msg {
-        padding-top: 25%;
-    }
-    textarea{
-        height:155px;
-    }
-}
-@media only screen and (max-width: 1400px) {
-    /* About Page */
-    .about-container {
-        height: 96vh;
-        width: 96%;
-        left: 2%;
-        bottom: 2%;
-    }
-    .swiper-slide h1 {
-        font-size: 1.25em;
-    }
-    .swiper-slide h2 {
-        font-size: 1em;
-        padding-left: 17.5%;
-        padding-right: 17.5%;
-    }
-    /* Experience Page */
-    .experience-pg ul li .content h1 {
-        font-size: 22px;
-    }
-    .experience-pg ul li .content h2 {
-        font-size: 18px;
-    }
-    .experience-pg ul li .content p {
-        font-size: 12px;
-    }
-    .exp-title {
-        font-size: 1.5em !important;
-    }
-    /* Contact Page */
-    .contact-pg .footer {
-        height: 96vh;
-        width: 96%;
-        left: 2%;
-        bottom: 2%;
-    }
-    .contact-pg .footer .contact-msg {
-        padding-top: 10%;
-    }
-    .contact-pg .footer .contact-msg h2 {
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-    .contact-pg .footer .contact-msg h3 {
-        font-size: 1.25em;
-        font-weight: 500;
-    }
-    input, textarea, ::placeholder {
-        font-size: 1em;
-    }
-}
 /* Navigate to top button */
 #section-up-btn {
     position: absolute;
@@ -834,4 +744,99 @@ textarea{
     80% { color: rgba(255, 255, 255, .8); }
     90% { color: rgba(255, 255, 255, .7); }
 }
+/* Media Queries */
+@media only screen and (max-width: 765px) {
+    .spotify {
+        width: 65%;
+        height: 65vh;
+    }
+    .menu-wrap { /* Display shrunk nav */
+        display: initial;
+    }
+    .nav-bar ul { /* Hide main nav */
+        display: none;
+    }
+    .header-logo { /* Hide logo */
+        display: none;
+    }
+    .home-pg .container h2 {
+        font-size: 1.5em;
+    }
+    .sidebar ul li i {
+        font-size: 20px;
+    }
+    .home-pg .container {
+        width: 55%;
+    }
+    .menu-wrap .menu > div > div > ul > li {
+        font-size: 1.25rem;
+    }
+    /* Contact Page */
+    .contact-pg .footer .contact-msg {
+        width: 68%;
+    }
+    .contact-pg .footer .contact-msg {
+        padding-top: 25%;
+    }
+    textarea{
+        height:155px;
+    }
+    /* Navigate button */
+    #section-up-btn, #section-down-btn, #home-section-down-btn {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 1400px) {
+    /* About Page */
+    .about-container {
+        height: 96vh;
+        width: 96%;
+        left: 2%;
+        bottom: 2%;
+    }
+    .swiper-slide h1 {
+        font-size: 1.25em;
+    }
+    .swiper-slide h2 {
+        font-size: 1em;
+        padding-left: 17.5%;
+        padding-right: 17.5%;
+    }
+    /* Experience Page */
+    .experience-pg ul li .content h1 {
+        font-size: 22px;
+    }
+    .experience-pg ul li .content h2 {
+        font-size: 18px;
+    }
+    .experience-pg ul li .content p {
+        font-size: 12px;
+    }
+    .exp-title {
+        font-size: 1.5em !important;
+    }
+    /* Contact Page */
+    .contact-pg .footer {
+        height: 96vh;
+        width: 96%;
+        left: 2%;
+        bottom: 2%;
+    }
+    .contact-pg .footer .contact-msg {
+        padding-top: 10%;
+    }
+    .contact-pg .footer .contact-msg h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .contact-pg .footer .contact-msg h3 {
+        font-size: 1.25em;
+        font-weight: 500;
+    }
+    input, textarea, ::placeholder {
+        font-size: 1em;
+    }
+}
+
 
