@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jefferson Ly</title>
     <link rel="icon" href="../imgs/website-icon.png">
+    <!-- Swiper for Sliders -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
     <!-- Stylesheets for styling -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Swiper for Sliders -->
-    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     
@@ -207,7 +208,29 @@
     </div>
 
     <div class="projects-pg" id="projects">
-        <h1>hello3</h1>
+        <!-- Swiper -->
+<div class="row swiper-proj-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" id="projects-card-1">
+            <h1>My Projects</h1>
+            <h2>List of featured projects:</h2>
+            <h3>• Sudoku Project</h3>
+            <h3>• Captcha Generator</h3>
+            <h3>• Spell Checker</h3>
+            <br/><br/><br/><br/>
+            <h3>More Projects will be added in the Future!</h3>
+        </div>
+		<div class="swiper-slide" id="projects-card-2">
+            <h1>Sudoku Project</h1>
+        </div>
+        <div class="swiper-slide" id="projects-card-3">
+            <h1>Captcha Generator</h1>
+        </div>
+        <div class="swiper-slide" id="projects-card-4">
+            <h1>Spell Checker</h1>
+        </div>
+	</div>
+</div>
         
         <button id="section-up-btn" onclick="window.location.href='#experience'"><i class="fas fa-sort-up"></i></button>
         <button id="section-down-btn" onclick="window.location.href='#contact'"><i class="fas fa-sort-down"></i></button>
@@ -291,6 +314,7 @@
         
     });
 
+    console.log("Designed and Developed by Jefferson Ly");
 </script>
 
 </html>
