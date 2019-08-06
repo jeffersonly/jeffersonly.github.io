@@ -92,8 +92,12 @@
                 <li><a href="https://www.linkedin.com/in/jeffersonly/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="https://github.com/jeffersonly" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://www.facebook.com/jefferson.ly.3" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#music"><i class="fas fa-music"></i></a></li>
             </ul>
         </div>
+
+        <!--Spotify Music -->
+        <iframe src="https://open.spotify.com/embed/playlist/5pIU26AqoI55ufqXrSCLNx" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="spotify"></iframe>
     </header>
 
     <div id="particles-js"></div>
@@ -189,12 +193,13 @@
             </ul>
         </div>
         
-        <button id="section-up-btn" onclick="window.location.href='#home'"><i class="fas fa-sort-up"></i></button>
+        <button id="section-up-btn" onclick="window.location.href='#about'"><i class="fas fa-sort-up"></i></button>
         <button id="section-down-btn" onclick="window.location.href='#projects'"><i class="fas fa-sort-down"></i></button>
     </div>
 
     <div class="projects-pg" id="projects">
         <h1>hello3</h1>
+        
         <button id="section-up-btn" onclick="window.location.href='#experience'"><i class="fas fa-sort-up"></i></button>
         <button id="section-down-btn" onclick="window.location.href='#contact'"><i class="fas fa-sort-down"></i></button>
     </div>
@@ -264,6 +269,18 @@
         loop: true
     }); 
 
+    $('a[href="#music"]').click(function(){
+        if($(".spotify").css('display') == 'none') {
+            $(".spotify").css({
+                "display": "initial"
+            })
+        } else {
+            $(".spotify").css({
+                "display": "none"
+            })
+        }
+        
+    });
 </script>
 
 </html>

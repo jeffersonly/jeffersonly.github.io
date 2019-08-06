@@ -157,14 +157,14 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
-    z-index: 100;
+    z-index: 200;
 }
 /* Style for top and bottom lines (of the 3 lines) */
 .menu-wrap .hamburger > div:before, 
 .menu-wrap .hamburger > div:after {
     content: '';
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     top: -10px;
     width: 35px;
     height: 4px;
@@ -328,7 +328,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 .sidebar ul {
     position: fixed;
     bottom: 0;
-    z-index: 100;
+    z-index: 200;
 }
 .sidebar ul li {
     list-style: none;
@@ -360,6 +360,18 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 }
 .sidebar .fa-facebook-square:hover {
     color: #3b5998;
+}
+.spotify {
+    text-align: center;
+    z-index: 101;
+    position: fixed;
+    width: 50%;
+    height: 50vh;
+    display: none;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* Image of logo on page */
 .header-logo {
@@ -812,3 +824,4 @@ textarea{
     80% { color: rgba(255, 255, 255, .8); }
     90% { color: rgba(255, 255, 255, .7); }
 }
+
