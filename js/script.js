@@ -37,7 +37,7 @@ $(document).ready(function () {
         loop: true,
         centeredSlides: true,
         slidesPerView: 3,
-        initialSlide: 3,
+        initialSlide: 0,
         keyboardControl: true,
         mousewheelControl: true,
         lazyLoading: true,

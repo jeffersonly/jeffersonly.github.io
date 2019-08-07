@@ -472,6 +472,14 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     padding-right: 5%;
     padding-top: 2.5%;
 }
+.swiper-slide h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+}
 .about-text-gallery-thumbs-text {
     height: 90px;
     line-height: 90px;
@@ -613,6 +621,10 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     bottom: 5%;
     border-radius: 10px;
     text-shadow: 0px 10px 30px black;
+    overflow: hidden;
+}
+.swiper-proj-container .swiper-proj-slide .swiper-slide-active{
+    width: 800px !important;
 }
 .swiper-proj-container h2 {
     text-align: center;
@@ -857,6 +869,11 @@ textarea{
     }
     .swiper-slide h2 {
         font-size: 1em;
+        padding-left: 17.5%;
+        padding-right: 17.5%;
+    }
+    .swiper-slide h3 {
+        font-size: 0.8em;
         padding-left: 17.5%;
         padding-right: 17.5%;
     }
