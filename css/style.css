@@ -635,6 +635,19 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     font-weight: 400;
     font-size: 20px;
 }
+.proj-code {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 10px 30px black;
+}
+.proj-code:hover {
+    color: black;
+    transition: 0.5s ease-in-out;
+    font-size: 2.25em;
+    text-shadow: 0px 10px 30px white;
+}
 #projects-card-1 {
     background: rgba(0, 0, 0, 0.35);
 }
@@ -650,6 +663,12 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
 }
 #projects-card-4 {
     background: url(/imgs/spellcheck-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#projects-card-5 {
+    background: url(/imgs/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
