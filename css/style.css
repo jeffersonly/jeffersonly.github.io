@@ -378,6 +378,7 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 /* Image of logo on page */
 .header-logo {
@@ -407,8 +408,6 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     text-align: center;
     font-size: 3em;
 }
-
-
 
 #particles-js {
     position: absolute;
@@ -929,5 +928,26 @@ textarea{
     }
     input, textarea, ::placeholder {
         font-size: 1em;
+    }
+}
+@media only screen and (max-height: 599px) {
+    input {
+        font-size:1em;
+        height:25px;
+    }
+    textarea{
+        font-size:1em;
+        height:125px;
+    }
+    ::placeholder {
+        font-weight: 700;
+        padding-left: 10px;
+        font-size: 1em;
+    }
+    .input:focus { /* Clicked on contact form input */
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .submit-btn {
+        font-size: 1.25em;
     }
 }

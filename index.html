@@ -109,8 +109,8 @@
                 Welcome to my page!
                 <br/>
                 I'm <span class="homeText"></span>
-                <br/>
-                <span class="faceText"></span>
+                <!-- <br/>
+                <span class="faceText"></span> -->
             </h2>
         </div>
         <button id="home-section-down-btn" onclick="window.location.href='#about'"><i class="fas fa-sort-down"></i></button>
@@ -270,7 +270,6 @@
                 <h2>Get in Touch!</h2>
                 <h3>Best way to reach me:</h3>
                 <h3>Email / Contact Form</h3>
-                <h3>\ (•◡•) /</h3>
                 <form class="form" action="https://formspree.io/jeffersonly98@gmail.com" method="POST">
                     <input name="name" type="text" placeholder="Enter full name" class="input" id="name" required>
                     <input name="email" type="text" placeholder="Enter email" class="input" id="email" required> 
@@ -322,12 +321,12 @@
         backSpeed: 70,
         loop: true
     }); 
-    var typed = new Typed(".faceText", {
+    /* var typed = new Typed(".faceText", {
         strings: ["( ⚆ _ ⚆ )", "༼ つ ಥ_ಥ ༽つ", "(¬‿¬)", "﴾͡๏̯͡๏﴿ O'RLY?"],
         typeSpeed: 80,
         backSpeed: 80,
         loop: true
-    }); 
+    });  */
 
     $('a[href="#music"]').click(function(){
         if($(".spotify").css('display') == 'none') {
