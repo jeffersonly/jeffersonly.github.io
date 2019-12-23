@@ -36,7 +36,7 @@ $(document).ready(function () {
         effect: 'coverflow',
         loop: true,
         centeredSlides: true,
-        slidesPerView: 3,
+        slidesPerView: 2,
         initialSlide: 0,
         keyboardControl: true,
         mousewheelControl: true,

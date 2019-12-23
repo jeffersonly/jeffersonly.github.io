@@ -672,6 +672,18 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     background-repeat: no-repeat;
     background-position: center;
 }
+#projects-card-6 {
+    background: url(/imgs/dropbox.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#projects-card-7 {
+    background: url(/imgs/celebrity.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .contact-pg { /* Contact Page */
     position: relative;
     width: 100%;
