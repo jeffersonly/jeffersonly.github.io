@@ -219,12 +219,12 @@ body.pg-loading{overflow:hidden}.pg-loading-screen{position:fixed;bottom:0;left:
     max-width: 100vw;
     max-height: 100vh;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.75s ease;
 }
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.85rem;
     padding: 1rem;
 }
 .menu-wrap .menu > div > div > ul > li > a {
